@@ -9,25 +9,24 @@ public class B9466 {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter wr = new BufferedWriter(new OutputStreamWriter(System.out));
     int[] stu;
-    boolean[] visit, team;
-    int cnt;
+    boolean[] visit, team; // 방문 여부, 팀 구성 여부
+    int cnt; // 팀을 구성한 학생 수
 
     void dfs(int current) {
-        // 이미 방문한 경우
+        // 이미 방문 했을 때
         if (visit[current]) {
-            team[current] = true; // 팀 편성
+            team[current] = true; // 팀 구성 완료
             cnt++;
-        } else { // 방문하지 않은 경우
-            visit[current] = true; // 방문 표시
+        } else {
+            visit[current] = true; // 방문 처리
         }
 
         // 다음 학생이 팀을 못구한 경우
-        int next = stu[current];
-        if (!team[next])
-            dfs(next);
-
-        visit[current] = false;
-        team[current] = true;
+        if (!team[current]) {
+            dfs(stu[current]);
+        }
+        visit[current] = false; // 해당 방문 체크 해제
+        team[current] = true; // 현재 노드의 학생은 탐색을 완료했으므로 true
     }
 
     public B9466() throws IOException {
@@ -35,8 +34,8 @@ public class B9466 {
         while (T-- > 0) {
             int n = Integer.parseInt(br.readLine()); // 학생 수
             stu = new int[n + 1]; // 학생 테이블
-            visit = new boolean[n + 1]; // 방문 여부
-            team = new boolean[n + 1]; // 팀 여부
+            visit = new boolean[n + 1];
+            team = new boolean[n + 1];
             cnt = 0; // 팀이 완성된 인원 수
 
             StringTokenizer st = new StringTokenizer(br.readLine()); // 선택된 학생들의 번호
@@ -47,7 +46,6 @@ public class B9466 {
                 if (!team[i]) // 팀을 못구한 학생인 경우 탐색 시작
                     dfs(stu[i]);
             }
-
             wr.write((n - cnt) + "\n");
         }
 
