@@ -3,11 +3,11 @@ check = None
 
 for i in range(7):
     if pitch[i] + 1 == pitch[i + 1]:
-        check = 'ascending'
+        check = "ascending"
     elif pitch[i] - 1 == pitch[i + 1]:
-        check = 'descending'
+        check = "descending"
     else:
-        check = 'mixed'
+        check = "mixed"
         break
 
-print(check) 
+print(check)
