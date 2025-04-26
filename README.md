@@ -21,21 +21,21 @@
 
 ## 🏃 문제 진행 상황
 
-| 순번 | Tag                     | 태그         | 문제집 | 총 문제 수 | 상태  |
-|:---:|:-------------------------|:------------:|:------:|:------------:|:----------:|:-----:|
-| 00  | Data Structure            | 자료구조     | [바로가기](#) | 4 | DOING |
-| 01  | Sorting                   | 정렬         | [바로가기](#) | 3 | DOING |
-| 02  | Math                      | 수학         | [바로가기](#) | 14 | DOING |
-| 03  | Greedy                    | 그리디       | [바로가기](#) | 5 | DOING |
-| 04  | Dynamic Programming       | 동적계획법   | [바로가기](#) | 7 | DOING |
-| 05  | Implementation            | 구현         | [바로가기](#) | 20 | DOING |
-| 06  | Graph Traversal           | 그래프 탐색  | [바로가기](#) | 24 | DOING |
-| 07  | Brute Force               | 완전탐색     | [바로가기](#) | 10 | DOING |
-| 08  | Simulation                | 시뮬레이션   | [바로가기](#) | 10 | DOING |
-| 09  | Binary Search             | 이분탐색     | [바로가기](#) | 1 | DOING |
-| 10  | Backtracking              | 백트래킹     | [바로가기](#) | 15 | DOING |
-| 11  | Divide and conquer        | 분합정복     | [바로가기](#) | 1 | DOING |
-| 12  | Prefix Sum                | 누적합      | [바로가기](#) | 2 | DOING |
+| 순번 | Tag                   | 태그         | 문제집          | 총 문제 수 | 상태  |
+|:---:|:----------------------:|:------------:|:---------------:|:----------:|:-----:|
+| 00  | Data Structure          | 자료구조     | [바로가기](#)    | 4          | DOING |
+| 01  | Math                    | 수학         | [바로가기](#)    | 14         | DOING |
+| 02  | Implementation          | 구현         | [바로가기](#)    | 20         | DOING |
+| 03  | Sorting                 | 정렬         | [바로가기](#)    | 3          | DOING |
+| 04  | Brute Force             | 완전탐색     | [바로가기](#)    | 10         | DOING |
+| 05  | Greedy                  | 그리디       | [바로가기](#)    | 5          | DOING |
+| 06  | Binary Search           | 이분탐색     | [바로가기](#)    | 1          | DOING |
+| 07  | Prefix Sum              | 누적합       | [바로가기](#)    | 2          | DOING |
+| 08  | Graph Traversal         | 그래프 탐색  | [바로가기](#)    | 24         | DOING |
+| 09  | Dynamic Programming     | 동적계획법   | [바로가기](#)    | 7          | DOING |
+| 10  | Divide and Conquer      | 분할정복     | [바로가기](#)    | 1          | DOING |
+| 11  | Backtracking            | 백트래킹     | [바로가기](#)    | 15         | DOING |
+| 12  | Simulation              | 시뮬레이션   | [바로가기](#)    | 10         | DOING |
 
 > 문제집 링크는 리포지트리에 맞게 수정해주세요.
 
