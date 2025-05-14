@@ -1,41 +1,26 @@
-from collections import Counter
-
 T = int(input())
 
-def solve(a, b):
-    def check(cards):
-        counter = Counter(cards)
+def solve(depth, sm):
+    global ans
+    if depth == N:
+        ans = min(ans, sm)
+        return
+    if sm >= ans:
+        return
+    
+    for i in range(N):
+        if v[i] == 0:
+            v[i] = 1
+            solve(depth + 1, sm + arr[depth][i])
+            v[i] = 0
 
-        # 트리플
-        for v in counter.values():
-            if v >= 3:
-                return True
-
-        # 런 (연속된 숫자 3개)
-        for i in range(8):  # 0~7까지 체크하면 i, i+1, i+2 가능
-            if counter[i] and counter[i+1] and counter[i+2]:
-                return True
-
-        return False
-
-    if check(a):
-        return 1
-    if check(b):
-        return 2
-    return 0
 
 for t in range(1, T + 1):
-    c = list(map(int, input().split()))
-    
-    A = []
-    B = []
-    ans = 0
-    for i in range(6):
-        A.append(c[i*2])
-        B.append(c[i*2 + 1])
-        if i >= 2:
-            ans = solve(A, B)
-            if ans != 0:
-                break
+    N = int(input())
+    arr = [list(map(int, input().split())) for _ in range(N)]
+
+    ans = float('inf')
+    v = [0]*N
+    solve(0, 0)
 
     print(f'#{t} {ans}')
