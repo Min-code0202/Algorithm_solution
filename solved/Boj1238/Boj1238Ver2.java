@@ -32,7 +32,8 @@ public class Boj1238Ver2 {
         pq.offer(new Node(start, 0));
         while (!pq.isEmpty()) {
             Node cur = pq.poll();
-            if (dist[cur.v] < cur.w) continue;
+            if (dist[cur.v] < cur.w)
+                continue;
             for (Node nxt : g[cur.v]) {
                 if (dist[nxt.v] > nxt.w + cur.w) {
                     dist[nxt.v] = nxt.w + cur.w;
@@ -61,8 +62,8 @@ public class Boj1238Ver2 {
             int u = Integer.parseInt(st.nextToken());
             int v = Integer.parseInt(st.nextToken());
             int w = Integer.parseInt(st.nextToken());
-            graph[u].add(new Node(v, w));          // 정방향 그래프
-            reverseGraph[v].add(new Node(u, w));   // 역방향 그래프
+            graph[u].add(new Node(v, w)); // 정방향 그래프
+            reverseGraph[v].add(new Node(u, w)); // 역방향 그래프
         }
 
         // X -> i (정방향)
@@ -72,7 +73,8 @@ public class Boj1238Ver2 {
 
         int max = 0;
         for (int i = 1; i <= N; i++) {
-            if (i == X) continue;
+            if (i == X)
+                continue;
             if (to[i] != INF && from[i] != INF)
                 max = Math.max(max, to[i] + from[i]);
         }
