@@ -10,8 +10,6 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-import Boj1238.Node;
-
 
 class Node implements Comparable<Node>{
     int v, w;

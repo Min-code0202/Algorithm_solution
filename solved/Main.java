@@ -7,18 +7,17 @@ import java.io.OutputStreamWriter;
 public class Main {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter wr = new BufferedWriter(new OutputStreamWriter(System.out));
-
     
+    public static void main(String[] args) throws IOException {
+        new Main().solution();
+    }
 
     public void solution() throws IOException {
-        
+
 
         wr.flush();
         wr.close();
         br.close();
     }
 
-    public static void main(String[] args) throws IOException {
-        new Main().solution();
-    }
 }
