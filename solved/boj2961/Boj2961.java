@@ -5,12 +5,12 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Boj2961 {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter wr = new BufferedWriter(new OutputStreamWriter(System.out));
 
     public static void main(String[] args) throws IOException{
-        new Main().solution();
+        new Boj2961().solution();
     }
 
     int N;

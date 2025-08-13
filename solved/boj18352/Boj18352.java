@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Boj18352 {
     // 입출력을 위한 BufferedReader와 BufferedWriter를 클래스 멤버 변수로 선언합니다.
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter wr = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -22,7 +22,7 @@ public class Main {
     int[] visited;
 
     public static void main(String[] args) throws IOException {
-        new Main().solution();
+        new Boj18352().solution();
     }
 
     public void solution() throws IOException {

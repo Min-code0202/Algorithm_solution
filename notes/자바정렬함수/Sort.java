@@ -3,9 +3,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class Main {
+public class Sort {
     public static void main(String[] args) throws IOException {
-        new Main().solution();
+        new Sort().solution();
     }
 
     public void solution() throws IOException {

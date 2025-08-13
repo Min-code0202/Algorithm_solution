@@ -7,7 +7,7 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Boj2468Ver2 {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter wr = new BufferedWriter(new OutputStreamWriter(System.out));
 
@@ -77,6 +77,6 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
-        new Main().solution();
+        new Boj2468Ver2().solution();
     }
 }

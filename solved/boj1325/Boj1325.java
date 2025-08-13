@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Boj1325 {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter wr = new BufferedWriter(new OutputStreamWriter(System.out));
 
@@ -82,6 +82,6 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException{
-        new Main().solution();
+        new Boj1325().solution();
     }
 }

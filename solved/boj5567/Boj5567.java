@@ -9,9 +9,9 @@ import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Boj5567 {
     public static void main(String[] args) throws IOException {
-        new Main().solution();
+        new Boj5567().solution();
     }
 
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
