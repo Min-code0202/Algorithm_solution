@@ -15,11 +15,11 @@
 
 - 그래프
 
-  [그래프](../img/bfs_graph.png)
+  ![그래프](../img/bfs_graph.png)
 
 - 트리
 
-  [트리](../img/bfs_tree.png)
+  ![트리](../img/bfs_tree.png)
 
 ### BFS 구현 - 인접 행렬
 
