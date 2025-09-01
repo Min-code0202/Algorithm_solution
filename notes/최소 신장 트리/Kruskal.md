@@ -117,6 +117,13 @@ public class KruskalMST {
                 cnt++;
                 if (cnt == V - 1) break;
             }
+            // 아래 코드가 find를 두번 호출하지 않아 더 좋은 코드임
+            // 하지만 union의 반환값을 boolean으로 바꿔야함
+            // if (union(e.u, e.v)) {
+            //     mstWeight += e.w;
+            //     cnt++;
+            //     if (cnt == V - 1) break;
+            // }
         }
 
         System.out.println("MST 가중치 합: " + mstWeight);
