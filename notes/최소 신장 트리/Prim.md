@@ -178,8 +178,12 @@ public class PrimMST {
     static List<List<Node>> graph;
 
     public static int prim(int V, int start) {
-        boolean[] visited = new boolean[V + 1];
+        boolean[] visited = new boolean[V + 1];      // 방문 여부
+        int[] minEdge = new int[V + 1];              // 각 정점까지의 최소 간선 비용
+        Arrays.fill(minEdge, Integer.MAX_VALUE);
+
         PriorityQueue<Node> pq = new PriorityQueue<>();
+        minEdge[start] = 0;
         pq.offer(new Node(start, 0));
 
         int mstWeight = 0;
@@ -193,8 +197,10 @@ public class PrimMST {
             mstWeight += cur.weight;
             cnt++;
 
+            // 인접 노드 갱신
             for (Node next : graph.get(cur.vertex)) {
-                if (!visited[next.vertex]) {
+                if (!visited[next.vertex] && next.weight < minEdge[next.vertex]) {
+                    minEdge[next.vertex] = next.weight;
                     pq.offer(new Node(next.vertex, next.weight));
                 }
             }
