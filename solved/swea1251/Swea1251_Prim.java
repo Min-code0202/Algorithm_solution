@@ -9,12 +9,12 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class Swea1251 {
+public class Swea1251_Prim {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter wr = new BufferedWriter(new OutputStreamWriter(System.out));
 
     public static void main(String[] args) throws IOException {
-        new Swea1251().solution();
+        new Swea1251_Prim().solution();
     }
 
     class Edge implements Comparable<Edge> {
