@@ -71,7 +71,7 @@ public class Boj1600 {
                     int ni = ci + horse[d][0];
                     int nj = cj + horse[d][1];
                     if(isOutOfRange(ni, nj)) continue;
-                    if(visited[jump][ni][nj] != 0) continue;
+                    if(visited[jump + 1][ni][nj] != 0) continue;
                     if(arr[ni][nj] == 1) continue;
                     visited[jump + 1][ni][nj] = visited[jump][ci][cj] + 1;
                     q.offer(new int[]{ni, nj, jump + 1});
