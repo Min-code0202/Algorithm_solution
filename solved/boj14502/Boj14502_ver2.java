@@ -1,11 +1,11 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class Boj14502_ver2 {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
-        new Main().solution();
+        new Boj14502_ver2().solution();
     }
 
     int N, M;
