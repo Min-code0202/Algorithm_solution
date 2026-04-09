@@ -1,8 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
-import java.util.TreeMap;
 
 public class Main {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -13,6 +11,5 @@ public class Main {
 
     public void solution() throws IOException {
 
-        br.close();
     }
 }
