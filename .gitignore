@@ -5,6 +5,7 @@
 *.ear
 hs_err_pid*
 replay_pid*
+Main.java
 
 # Common Java build directories
 bin/
@@ -26,4 +27,3 @@ target/
 .DS_Store
 Thumbs.db
 desktop.ini
-
