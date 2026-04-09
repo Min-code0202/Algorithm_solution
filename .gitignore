@@ -1,0 +1,29 @@
+# Java compile outputs
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+replay_pid*
+
+# Common Java build directories
+bin/
+out/
+build/
+target/
+
+# IDE settings
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# OS / misc
+.DS_Store
+Thumbs.db
+desktop.ini
+
